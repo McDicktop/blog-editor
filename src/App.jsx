@@ -30,6 +30,16 @@ const Tiptap = () => {
         heading: {
           levels: [1, 2, 3],
         },
+        bulletList: {
+          HTMLAttributes: {
+            class: 'bullet-list',
+          },
+        },
+        orderedList: {
+          HTMLAttributes: {
+            class: 'ordered-list',
+          },
+        },
       }),
       Image.configure({
         inline: true,
@@ -39,7 +49,9 @@ const Tiptap = () => {
         openOnClick: false,
       }),
       TextAlign.configure({
-        types: ['heading', 'paragraph', 'image'],
+        types: ['heading', 'paragraph'],
+        alignments: ['left', 'center', 'right', 'justify'],
+        defaultAlignment: 'left',
       }),
     ],
     content: '<p>Начните писать ваш пост здесь...</p>',
@@ -72,7 +84,6 @@ const Tiptap = () => {
 
   const handleButtonClick = (commandFn) => {
     commandFn()
-    // Принудительно обновляем состояние кнопок сразу после клика
     setTimeout(() => updateActiveButtons(editor), 10)
   }
 

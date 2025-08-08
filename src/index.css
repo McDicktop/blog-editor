@@ -135,3 +135,40 @@ body {
 .ProseMirror[data-text-align="justify"] {
     text-align: justify;
 }
+
+/* Стили для списков */
+.ProseMirror .bullet-list {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+.ProseMirror .ordered-list {
+    list-style-type: decimal;
+    padding-left: 1.5em;
+}
+
+/* Выравнивание по ширине */
+.ProseMirror p[data-text-align="justify"] {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Общие стили для выравнивания */
+.ProseMirror h1[data-text-align],
+.ProseMirror h2[data-text-align],
+.ProseMirror h3[data-text-align],
+.ProseMirror p[data-text-align] {
+    display: block;
+}
+
+.ProseMirror [data-text-align="left"] {
+    text-align: left;
+}
+
+.ProseMirror [data-text-align="center"] {
+    text-align: center;
+}
+
+.ProseMirror [data-text-align="right"] {
+    text-align: right;
+}
