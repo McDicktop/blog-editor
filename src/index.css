@@ -26,14 +26,14 @@ body {
 .menu-bar {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    padding: 12px;
+    gap: 16px;
+    padding: 10px;
     background: #f8f9fa;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .menu-bar button {
-    padding: 8px 12px;
+    padding: 4px 4px;
     border: 1px solid #ddd;
     background: white;
     border-radius: 4px;
@@ -79,6 +79,7 @@ body {
 
 .ProseMirror p {
     margin: 0 0 1em 0;
+    line-height: .6;
 }
 
 .ProseMirror h1 {
